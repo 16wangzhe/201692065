@@ -142,7 +142,7 @@ struct dsr_pkt *dsr_pkt_alloc(Packet * p)
 
 #else
 
-struct dsr_pkt *dsr_pkt_alloc(struct sk_buff *skb)
+struct dsr_pkt *dsr_pkt_alloc(struct sk_buff *skb)¡//¶¯Ì¬·ÖÅäbuffÄÚ´æ
 {
 	struct dsr_pkt *dp;
 	int dsr_opts_len = 0;

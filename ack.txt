@@ -1,0 +1,11 @@
+1.
+	dsr_build_ip()创建ip header
+	dsr_opt_hdr_add()创建opt header
+	dsr_ack_opt_hdr_add()创建ACK opt header
+2.
+	dsr_ack_send() ack发送
+	dsr_ack_req_opt_create()req包创建
+	dsr_ack_req_opt_add（）添加
+	dsr_ack_req_send（）发送
+	dsr_ack_req_opt_recv（）接收
+	dsr_ack_opt_recv（）接收

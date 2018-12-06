@@ -1,0 +1,10 @@
+do_dbglog
+dsr_emit_log_char
+dsr_vprintk
+trace
+dbg_log_open
+dbg_log_release
+dbg_log_read
+dbg_log_poll
+dbg_init
+dbg_cleanup

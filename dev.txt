@@ -1,0 +1,17 @@
+dsr_skb_create
+dsr_hw_header_create
+dsr_dev_inetaddr_event
+dsr_dev_set_address
+set_multicast_list
+dsr_dev_accept_fastpath
+dsr_dev_open
+dsr_dev_stop
+dsr_dev_uninit
+dsr_dev_setup
+ dsr_dev_llrecv
+dsr_dev_deliver
+dsr_dev_xmit
+dsr_dev_start_xmit
+dsr_dev_get_stats
+dsr_dev_init
+dsr_dev_cleanup
