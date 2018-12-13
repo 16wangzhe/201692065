@@ -36,7 +36,7 @@ int NSCLASS dsr_recv(struct dsr_pkt *dp)
 
 	/* Add mac address of previous hop to the neighbor table */
 
-	if (dp->flags & PKT_PROMISC_RECV) {//flag==1½øÈë
+	if (dp->flags & PKT_PROMISC_RECV) {
 		dsr_pkt_free(dp);
 		return 0;
 	}
