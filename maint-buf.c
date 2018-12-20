@@ -124,7 +124,7 @@ static inline int crit_addr(void *pos, void *data)
 }
 
 /* Criteria function for buffered packets based on expire time */
-static inline int crit_expires(void *pos, void *data)
+static inline int crit_expires(void *pos, void *data)//检查是否有效
 {
 	struct maint_entry *m = (struct maint_entry *)pos;
 	struct maint_entry *m_new = (struct maint_entry *)data;

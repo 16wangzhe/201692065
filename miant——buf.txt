@@ -2,3 +2,16 @@ crit_addr_id_del
 crit_addr_del
 crit_addr
 crit_expires
+crit_ack_req_sent
+maint_buf_set_max_len
+maint_buf_salvage
+maint_buf_timeout
+maint_buf_set_timeout
+maint_buf_add
+ maint_buf_del_all
+maint_buf_del_all_id
+maint_buf_del_addr
+maint_buf_print
+maint_buf_get_info
+ maint_buf_init
+ maint_buf_cleanup

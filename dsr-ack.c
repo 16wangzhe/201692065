@@ -39,7 +39,7 @@ struct dsr_ack_opt *dsr_ack_opt_add(char *buf, int len, struct in_addr src,
 	return ack;
 }
 
-int NSCLASS dsr_ack_send(struct in_addr dst, unsigned short id)
+int NSCLASS dsr_ack_send(struct in_addr dst, unsigned short id)//创建一个pkt并发送
 {
 	struct dsr_pkt *dp;
 	struct dsr_ack_opt *ack_opt;
@@ -104,7 +104,7 @@ int NSCLASS dsr_ack_send(struct in_addr dst, unsigned short id)
 
 	DEBUG("Sending ACK to %s id=%u\n", print_ip(dst), id);
 
-	dp->flags |= PKT_XMIT_JITTER;
+	dp->flags |= PKT_XMIT_JITTER;//8
 
 	XMIT(dp);
 
@@ -147,7 +147,7 @@ dsr_ack_req_opt_add(struct dsr_pkt *dp, unsigned short id)
 		goto end;
 	}
 #ifdef NS2
-	if (dp->p) {
+	if (dp->p) {      //pkt中是否有common数据包
 		hdr_cmn *cmh = HDR_CMN(dp->p);
 		prot = cmh->ptype();
 	} else
